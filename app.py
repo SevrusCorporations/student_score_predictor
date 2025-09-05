@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
     # Start scheduler for background retraining
     scheduler = BackgroundScheduler()
-    scheduler.add_job(func=train_model, trigger="interval", minutes=1)  # retrain every 10 min
+    scheduler.add_job(func=train_model, trigger="interval", minutes=10)  # retrain every 10 min
     scheduler.start()
 
     app.run(host="0.0.0.0", port=5000, debug=False)
