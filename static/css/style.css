@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.github-link {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.github-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+.github-logo:hover {
+    transform: scale(1.15);
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    margin: 80px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 500px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button, .feed-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #4e73df;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+button:hover, .feed-btn:hover {
+    background: #2e59d9;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin: 20px 0;
+    padding: 15px;
+    background: #e9f7ef;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    color: #155724;
+    font-size: 1.1em;
+}
+
+.plot {
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
