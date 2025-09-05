@@ -5,6 +5,7 @@ Author: Sahil Gour (@SirSevrus)
 import os
 import re
 import io
+import time
 import base64
 import pandas as pd
 from flask import Flask, render_template, request
@@ -68,9 +69,12 @@ def train_model():
     df = create_dataframe()
     X = df[["Hours"]]
     y = df[["Score"]]
+    t1 = time.time()
     model = LinearRegression()
     model.fit(X, y)
-    print("✅ Model retrained with latest data")
+    t2 = time.time()
+    print(f"[MODEL] Model trained in {t2 - t1:.2f} seconds")
+
 
 
 # ----------------------------
