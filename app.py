@@ -93,6 +93,7 @@ def home():
             hours = float(request.form["hours"])
             input_df = pd.DataFrame([[hours]], columns=["Hours"])
             prediction = model.predict(input_df)[0][0]
+            prediction = max(0, min(100, prediction)) # making sure it doesn't go beyond 0-100 range
     return render_template("index.html", prediction=prediction, plot_url=plot_url)
 
 
