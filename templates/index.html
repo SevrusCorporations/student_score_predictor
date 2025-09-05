@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfM7MY1xJsQUEeVC6nfV9sDAAsnuTG85ePfNKelsOO_sBc3XQ/viewform?usp=dialog"
+       target="_blank" class="feed-btn-top" title="Feed Your Data">
+        📝 Feed Your Data
+    </a>
     <!-- GitHub button -->
     <a href="https://github.com/SevrusCorporations/student_score_predictor" 
        target="_blank" class="github-link" title="View on GitHub">
@@ -15,11 +19,18 @@
 
     <div class="container">
         <h2>📚 Student Score Predictor</h2>
-        
+    
+    <p class="description">
+        This project predicts a student's exam score based on their average study hours per day.  
+        It uses a machine learning model (Linear Regression) trained on real-world data.  
+        The model retrains automatically over time to stay up-to-date with the latest inputs.
+    </p>
+        <h2>Predict your Score</h2>
+
         <!-- Prediction Form -->
         <form method="POST" class="form">
             <label for="hours">Enter study hours per day:</label><br>
-            <input type="number" step="0.1" name="hours" id="hours" required>
+            <input type="number" step="0.1" name="hours" id="hours" min="0" required>
             <button type="submit">Predict</button>
         </form>
 
@@ -30,10 +41,7 @@
         {% endif %}
 
         <hr>
-
-        <!-- Feed data form button -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfM7MY1xJsQUEeVC6nfV9sDAAsnuTG85ePfNKelsOO_sBc3XQ/viewform?usp=dialog"
-           target="_blank" class="feed-btn">📝 Feed Your Data</a>
+        <h4 class="footer-msg">Made by Sahil Gour (<a class="git-profile" href="https://github.com/SevrusCorporations/" target="_blank">@SirSevrus</a>)</h4>
     </div>
 </body>
 </html>

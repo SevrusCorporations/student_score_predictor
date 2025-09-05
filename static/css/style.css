@@ -16,13 +16,14 @@ body {
 }
 
 .github-logo {
+    border-radius: 32px;
     width: 40px;
     height: 40px;
     transition: transform 0.2s ease;
 }
 
 .github-logo:hover {
-    transform: scale(1.15);
+    transform: scale(1.5);
 }
 
 .container {
@@ -48,7 +49,7 @@ h2 {
     border-radius: 8px;
 }
 
-button, .feed-btn {
+button, .feed-btn-top {
     padding: 10px 20px;
     border: none;
     background: #4e73df;
@@ -61,9 +62,17 @@ button, .feed-btn {
     text-decoration: none;
 }
 
-button:hover, .feed-btn:hover {
+.feed-btn-top{
+    padding: 4px 8px;
+}
+
+button:hover, .feed-btn-top:hover {
     background: #2e59d9;
     transform: translateY(-2px);
+}
+
+.feed-btn-top:hover {
+    transform: translateX(10px) scale(1.2);
 }
 
 .result {
@@ -81,4 +90,23 @@ button:hover, .feed-btn:hover {
     margin-top: 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
+}
+
+.description {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-msg {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.git-profile {
+    color: #4e73df;
+    text-decoration: none;
 }

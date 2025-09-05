@@ -4,14 +4,15 @@ A simple **Flask + Machine Learning (Linear Regression)** web app that predicts 
 
 This project was built as part of my **B.Sc. Data Science project** 🎓.  
 
+Render Deployment Link -> https://student-score-predictor-3goj.onrender.com/
 ---
 
 ## Features
 - Enter daily study hours → predict exam percentage 
 - Clean & interactive web UI with modern CSS
-- Toggleable **debug plot** showing regression line & dataset 
+- Auto trains on data after specific period of time(currently 10 minutes)
 - Add your own data via Google Form 
-- Deployable on **Vercel/Heroku/Render** for easy sharing
+- Deployable on **Heroku/Render** for easy sharing
 
 ---
 
@@ -49,4 +50,4 @@ Hi, I’m Sahil Gour (@SirSevrus) 👋
 
 You’re welcome to use this project in your own work, and I’d love for you to collaborate if you’re interested. If you find this project helpful, that makes me really happy!
 
-I’m planning to deploy it on Vercel so that more people can access it easily. The project isn’t perfect yet, but I’m continuously working on improving it.
+I’m planning to deploy it on render so that more people can access it easily. The project isn’t perfect yet, but I’m continuously working on improving it.
