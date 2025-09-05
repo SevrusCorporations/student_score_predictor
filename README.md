@@ -4,7 +4,8 @@ A simple **Flask + Machine Learning (Linear Regression)** web app that predicts 
 
 This project was built as part of my **B.Sc. Data Science project** 🎓.  
 
-Render Deployment Link -> https://student-score-predictor-3goj.onrender.com/
+Render Deployment Link -> [Student Score Predictor](https://student-score-predictor-3goj.onrender.com/)
+
 ---
 
 ## Features
